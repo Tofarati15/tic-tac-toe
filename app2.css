@@ -1,0 +1,25 @@
+table {
+    margin: auto;
+    border-collapse: collapse; /* prevents double borders */
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.vertical {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.horizontal {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}

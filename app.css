@@ -1,47 +1,25 @@
-body {
-    font-family: Arial, sans-serif;
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td {
+    width: 100px;
+    height: 100px;
     text-align: center;
 }
 
 h1 {
-    margin-bottom: 30px;
+    text-align: center;
+    text-transform: capitalize;
 }
 
-.board {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
-    gap: 0;
-    margin: auto;
-    width: max-content;
+.vertical {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
-.cell {
-    border: 2px solid black;
-    width: 100px;
-    height: 100px;
-}
-
-.cell:nth-child(-n+3) {
-    border-top: none;
-}
-
-.cell:nth-child(3n+1) {
-    border-left: none;
-}
-
-.cell:nth-child(3n) {
-    border-right: none;
-}
-
-.cell:nth-child(3n) {
-    border-bottom: none;
-}
-
-.cell:not(:nth-last-child(-n+3)) {
-    border-bottom: none;
-}
-
-.cell:nth-last-child(-n+3) {
-    border-bottom: none;
+.horizontal {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
